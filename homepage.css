@@ -1,8 +1,9 @@
-table, th, td 
+body
 {
-  border: 1px solid black;
-  border-collapse: collapse;
-  padding: 15px;
+  background-image: url("background.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .div1
@@ -17,11 +18,44 @@ table, th, td
   margin: 0 auto;
 }
 
-body
+.div2
 {
-  background-image: url("background.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  text-align: center;
+  background-color: #12132e;
+  width: 600px;
+  border-radius: 30px;
+  padding: 50px;
+  margin: 0 auto;
+  margin-top: 50px;
 }
 
+.div3
+{
+  text-align: center;
+  background-color:#12132e;
+  width: 800px;
+  border-radius: 30px;
+  padding: 50px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+table, th, td 
+{
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 15px;
+  border-radius: 300px;
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.paragraph
+{
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+  font-size: 20px;
+}
