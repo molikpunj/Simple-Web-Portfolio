@@ -1,6 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="homepage.css">
     <link rel="icon" type="image/x-icon" href="https://avatars.githubusercontent.com/u/206360725?v=4">
     <title>HomePage</title>
@@ -13,85 +15,58 @@
     <div class="div4">
         <div class="div2">
             <p class="paragraph">This is just an introductory website where I have shared some stuff about myself to you all.</p>
-            <a href="https://github.com/molikpunj" target="_blank" rel="noopener noreferrer"> 
-                <button>See My Github Account</button> 
+            <a href="https://github.com/molikpunj" target="_blank">
+                <button>See My Github Account</button>
             </a><br>
-            <a href="https://www.instagram.com/mlem_moulick/" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.instagram.com/mlem_moulick/" target="_blank">
                 <button>See My Instagram Account</button>
             </a><br>
-            <a href="https://www.linkedin.com/in/moulick-punj-451287326/" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/moulick-punj-451287326/" target="_blank">
                 <button>See My LinkedIn</button>
             </a><br>
-            <a href="https://github.com/molikpunj/Tic-Tac-Toe" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/molikpunj/Tic-Tac-Toe" target="_blank">
                 <button>See My Best Project So Far</button>
             </a><br>
-            <img src="https://avatars.githubusercontent.com/u/206360725?v=4" length="200px" width="200px" alt="Molik's Pfp" class="pfp">
+            <img src="https://avatars.githubusercontent.com/u/206360725?v=4" alt="Molik's Pfp" class="pfp">
         </div>
         <div class="div3">
             <p class="paragraph">Now before I proceed with things about myself, I would like to know who you are! So please fill out this form.</p>
             <form>
-                <table>
-                    <tr>
-                        <td>
-                            <label for="fname">First Name:</label><br>
-                            <input type="text" id="fname" name="fname"><br>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <label for="lname">Last Name:</label><br>
-                            <input type="text" id="lname" name="lname"><br>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <label for="age">Age:</label><br>
-                            <input type="text" id="age" name="age"><br>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <label>Select Your Gender:</label><br>
-                            <input type="radio" id="male" name="gender" value="male">
-                            <label for="male">Male</label><br>
-                            <input type="radio" id="female" name="gender" value="female">
-                            <label for="female">Female</label><br>
-                            <input type="radio" id="other" name="gender" value="other">
-                            <label for="other">Other</label><br>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <label>Do You Have Any Of These Interests?:</label><br>
-                            <input type="checkbox" id="programming" name="interest1" value="programming">
-                            <label for="programming">Programming</label><br>
-                            <input type="checkbox" id="kickboxing" name="interest2" value="kickboxing">
-                            <label for="kickboxing">Kickboxing</label><br>
-                            <input type="checkbox" id="chess" name="interest3" value="chess">
-                            <label for="chess">Chess</label><br>
-                            <input type="checkbox" id="games" name="interest4" value="games">
-                            <label for="games">Video Games</label><br>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <label for="favcolor">Select your favorite color:</label>
-                            <input type="color" id="favcolor" name="favcolor"><br>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <label for="birthday">What's The Date Today?:</label>
-                            <input type="date" id="date" name="date"><br>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <input type="submit" id="submit" name="submit" value="Submit" class="formb">
-                            <input type="reset" id="reset" name="reset" value="Reset" class="formb">
-                        </td>
-                    </tr>
-                </table>
+                <label for="fname">First Name:</label><br>
+                <input type="text" id="fname" name="fname"><br><br>
+
+                <label for="lname">Last Name:</label><br>
+                <input type="text" id="lname" name="lname"><br><br>
+
+                <label for="age">Age:</label><br>
+                <input type="text" id="age" name="age"><br><br>
+
+                <label>Select Your Gender:</label><br>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label><br>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label><br>
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Other</label><br><br>
+
+                <label>Do You Have Any Of These Interests?:</label><br>
+                <input type="checkbox" id="programming" name="interest1" value="programming">
+                <label for="programming">Programming</label><br>
+                <input type="checkbox" id="kickboxing" name="interest2" value="kickboxing">
+                <label for="kickboxing">Kickboxing</label><br>
+                <input type="checkbox" id="chess" name="interest3" value="chess">
+                <label for="chess">Chess</label><br>
+                <input type="checkbox" id="games" name="interest4" value="games">
+                <label for="games">Video Games</label><br><br>
+
+                <label for="favcolor">Select your favorite color:</label>
+                <input type="color" id="favcolor" name="favcolor"><br><br>
+
+                <label for="date">What's The Date Today?:</label>
+                <input type="date" id="date" name="date"><br><br>
+
+                <input type="submit" class="formb" value="Submit">
+                <input type="reset" class="formb" value="Reset">
             </form>
         </div>
     </div>
