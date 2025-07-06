@@ -113,6 +113,11 @@ button:active
   background-color: #b3b2b2;
 }
 
+img.pfp
+{
+  border-radius: 50%;
+}
+
 @media (max-width: 768px) {
   .div1, .div2, .div3 {
     width: 90% !important;
