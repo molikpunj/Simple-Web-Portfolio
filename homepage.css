@@ -1,5 +1,21 @@
-table, th, td {
+table, th, td 
+{
   border: 1px solid black;
   border-collapse: collapse;
   padding: 15px;
 }
+
+p
+{
+  color: rgba(255, 0, 0, 1);
+  font-size: 20px;
+}
+
+body
+{
+  background-image: url("background.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
