@@ -112,3 +112,8 @@ button:active
 {
   background-color: #b3b2b2;
 }
+
+.img
+{
+  border-radius: 50%;
+}
