@@ -4,6 +4,47 @@ body
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-container
+{
+  background-color: rgba(18, 19, 46, 0.9);
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  position: fixed;
+  top: 0;
+}
+
+.nav-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  width: 100%;
+  justify-content: end;
+  align-items: center;
+}
+
+.nav-link {
+  display: block;
+  padding: 15px 20px;
+  text-decoration: none;
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+  font-weight: bold;
+  transition: text-shadow 0.3s ease;
+}
+
+.nav-link:hover
+{
+  text-shadow: 
+  0 0 5px rgb(144, 202, 249),
+    0 0 10px rgb(144, 202, 249),
+    0 0 15px rgb(144, 202, 249);
 }
 
 .div1
@@ -11,17 +52,23 @@ body
   color: white;
   font-family: 'Segoe UI', sans-serif;
   text-align: center;
-  background-color:#12132e;
+  background-color:rgba(18, 19, 46, 0.9);
   width: 1200px;
   border-radius: 30px;
   padding: 50px;
   margin: 0 auto;
+  margin-top: 90px;
+}
+
+.div1 h1
+{
+  color: rgb(144, 202, 249);
 }
 
 .div2
 {
   text-align: center;
-  background-color: #12132e;
+  background-color: rgba(18, 19, 46, 0.9);
   width: 600px;
   border-radius: 30px;
   padding: 50px;
@@ -29,10 +76,16 @@ body
   margin-top: 50px;
 }
 
+.div2 p
+{
+  color: white;
+  font-weight: bold;
+}
+
 .div3
 {
   text-align: center;
-  background-color:#12132e;
+  background-color:rgba(18, 19, 46, 0.9);
   width: 800px;
   border-radius: 30px;
   padding: 50px;
@@ -40,10 +93,10 @@ body
   margin-top: 50px;
 }
 
-.div4
+.div3 p
 {
-  display: flex;
-  justify-content: space-between;
+  color: white;
+  font-weight: bold;
 }
 
 table, th, td 
@@ -71,46 +124,58 @@ table, th, td
 
 button
 {
-  background-color: white;
+  background-color: rgb(144, 202, 249);
+  color: black;
   padding: 30px;
   border-radius: 10px;
+  border-style: none;
   margin-bottom: 40px;
   font-family: 'Segoe UI', sans-serif;
   font-size: 15px;
   font-weight:600;
-  transition: background-color 0.2s ease;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  animation: fadeIn 1s ease;
+  transition: background-color 0.2s ease, transform 0.2s, box-shadow 0.2s;
 }
 
 button:hover
 {
-  background-color: #dedede;
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(109, 101, 255, 0.3);
 }
 
 button:active
 {
-  background-color: #b3b2b2;
+  box-shadow: 0 15px 35px rgba(180, 176, 255, 0);
 }
 
 .formb
 {
-  background-color: white;
+  background-color: rgb(144, 202, 249);
   padding: 30px;
+  color: black;
   border-radius: 10px;
+  border-style: none;
   margin-bottom: 20px;
   font-family: 'Segoe UI', sans-serif;
   font-size: 15px;
   font-weight:600;
   transition: background-color 0.2s ease;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  animation: fadeIn 1s ease;
+  transition: background-color 0.2s ease, transform 0.2s, box-shadow 0.2s;
 }
 
 .formb:hover
 {
-  background-color: #dedede;
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(109, 101, 255, 0.3);
 }
 
 .formb:active
 {
-  background-color: #b3b2b2;
+  box-shadow: 0 15px 35px rgba(180, 176, 255, 0);
 }
 
 .img
