@@ -1,112 +1,221 @@
 <!DOCTYPE html>
 <html lang="en">
-<link rel="stylesheet" href="index.css">
-<link rel="icon" type="image/x-icon" href="https://avatars.githubusercontent.com/u/206360725?v=4">
-<title>Moulick Punj - Portfolio</title>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
-        <nav class="navbar" id="navbar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" type="image/x-icon" href="https://avatars.githubusercontent.com/u/206360725?v=4">
+    <title>Moulick Punj - Portfolio</title>
+</head>
+<body>
+    <nav class="navbar" id="navbar">
         <div class="nav-container">
-            <ul class="nav-menu">
+            <div class="nav-brand">
+                <span>Moulick Punj</span>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
                 <li><a href="#home" class="nav-link">Home</a></li>
                 <li><a href="#about" class="nav-link">About</a></li>
                 <li><a href="#skills" class="nav-link">Skills</a></li>
                 <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#achievements" class="nav-link">Achievements</a></li>
                 <li><a href="#journey" class="nav-link">Journey</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
         </div>
-        </nav>
-        <div class="div1" id="home">
-            <h1>Welcome To Molik Punj's Portfolio!</h1>
-            <h2>Hello there traveller. <br>I am Molik Punj and I am a BCA student trying to learn about programming and machine learning.</h2>
-        </div>
-        <div class="div2">
-            <p class="paragraph">This is my digital space where I share my journey as a developer and my passion for technology.</p>
-            <a href="https://github.com/molikpunj" target="_blank" rel="noopener noreferrer"> 
-                <button>See My Github Account</button> 
-            </a><br>
-            <a href="https://www.instagram.com/mlem_moulick/" target="_blank" rel="noopener noreferrer">
-                <button>See My Instagram Account</button>
-            </a><br>
-            <a href="https://www.linkedin.com/in/moulick-punj-451287326/" target="_blank" rel="noopener noreferrer">
-                <button>See My LinkedIn</button>
-            </a><br>
-            <a href="https://github.com/molikpunj/Tic-Tac-Toe" target="_blank" rel="noopener noreferrer">
-                <button>See My Best Project So Far</button>
-            </a><br>
-            <img class="img" src="https://avatars.githubusercontent.com/u/206360725?v=4" length="200px" width="200px" alt="Molik's Pfp" class="pfp"></img>
-        </div>
-        <div class="div3">
-            <p class="paragraph">Fill this form out if you want me to know who checked out my portfolio!</p>
-            <form>
-                <table>
-                <tr>
-                <td>
-                    <label for="fname">First Name:</label><br>
-                    <input type="text" id="fname" name="fname"><br>
-                </td>
-                </tr>
-                <tr>
-                <td>
-                    <label for="lname">Last Name:</label><br>
-                    <input type="text" id="lname" name="lname"><br>
-                </td>
-                </tr>
-                <tr>
-                <td>
-                    <label for="age">Age:</label><br>
-                    <input type="text" id="age" name="age"><br>
-                </td>
-                </tr>
-                <tr>
-                <td>
-                    <label>Select Your Gender:</label><br>
-                    <input type="radio" id="male" name="gender" value="male">
-                    <label for="male">Male</label><br>
-                    <input type="radio" id="female" name="gender" value="female">
-                    <label for="female">Female</label><br>
-                    <input type="radio" id="other" name="gender" value="other">
-                    <label for="other">Other</label><br>
-                </td>
-                </tr>
-                <tr>
-                <td>
-                    <label>Do You Have Any Of These Interests?:</label><br>
-                    <input type="checkbox" id="programming" name="interest1" value="programming">
-                    <label for="programming">Programming</label><br>
-                    <input type="checkbox" id="kickboxing" name="interest2" value="kickboxing">
-                    <label for="kickboxing">Kickboxing</label><br>
-                    <input type="checkbox" id="chess" name="interest3" value="chess">
-                    <label for="chess">Chess</label><br>
-                    <input type="checkbox" id="games" name="interest4" value="games">
-                    <label for="games">Video Games</label><br>
-                </td>
-                </tr>
-                <tr>
-                <td>
-                    <label for="favcolor">Select your favorite color:</label>
-                    <input type="color" id="favcolor" name="favcolor"><br>
-                </td>
-                </tr>
-                <tr>
-                <td>
-                    <label for="birthday">What's The Date Today?:</label>
-                    <input type="date" id="date" name="date"><br>
-                </td>
-                </tr>
-                <td>
-                    <input type="submit" id="submit" name="submit" value="Submit" class="formb">
-                    <input type="reset" id="reset" name="reset" value="Reset" class="formb">
-                </td>
-                </tr>
-                </table>
-            </form>
-        </div>
-    <script src="index.js"></script>
-    </body>
-</html>
+    </nav>
 
+    <div class="section div1" id="home">
+        <h1>Welcome To Moulick Punj's Portfolio!</h1>
+        <h2>Hello there traveller. <br>I am Moulick Punj and I am a BCA student trying to learn about programming and machine learning.</h2>
+    </div>
+
+    <div class="section div2" id="about">
+        <p class="paragraph">This is my digital space where I share my journey as a developer and my passion for technology.</p>
+        <a href="https://github.com/molikpunj" target="_blank" rel="noopener noreferrer"> 
+            <button>See My Github Account</button> 
+        </a><br>
+        <a href="https://www.instagram.com/mlem_moulick/" target="_blank" rel="noopener noreferrer">
+            <button>See My Instagram Account</button>
+        </a><br>
+        <a href="https://www.linkedin.com/in/moulick-punj-451287326/" target="_blank" rel="noopener noreferrer">
+            <button>See My LinkedIn</button>
+        </a><br>
+        <a href="https://github.com/molikpunj/Tic-Tac-Toe" target="_blank" rel="noopener noreferrer">
+            <button>See My Best Project So Far</button>
+        </a><br>
+        <img class="img" src="https://avatars.githubusercontent.com/u/206360725?v=4" length="200px" width="200px" alt="Molik's Pfp">
+    </div>
+
+    <div class="section areas-section" id="skills">
+        <h1>Areas Of Interest</h1>
+        <div class="interests-grid">
+            <div class="interest-card">
+                <h3>AI/ML</h3>
+                <p>Exploring the fascinating world of Artificial Intelligence and Machine Learning, working with data analysis and predictive models.</p>
+                <ul>
+                    <li>NumPy</li>
+                    <li>Pandas</li>
+                    <li>Matplotlib</li>
+                    <li>Future: PyTorch & TensorFlow</li>
+                </ul>
+            </div>
+            <div class="interest-card">
+                <h3>Programming</h3>
+                <p>Passionate about coding and building applications using various programming languages and technologies.</p>
+                <ul>
+                    <li>Python</li>
+                    <li>JavaScript</li>
+                    <li>HTML & CSS</li>
+                    <li>SQL</li>
+                    <li>Luau</li>
+                    <li>C (DSA)</li>
+                </ul>
+            </div>
+            <div class="interest-card">
+                <h3>Game Development</h3>
+                <p>Creating interactive experiences and games, combining creativity with programming skills.</p>
+                <ul>
+                    <li>Interactive Games</li>
+                    <li>Web-based Gaming</li>
+                    <li>Game Logic Design</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="section projects-section" id="projects">
+        <h1>Featured Projects</h1>
+        <div class="projects-grid">
+            <div class="project-card">
+                <h3>Tic-Tac-Toe Game</h3>
+                <p>An interactive web-based Tic-Tac-Toe game featuring clean UI design, game logic implementation, and responsive gameplay. Built using HTML, CSS, and JavaScript with smooth animations and winning detection.</p>
+                <a href="https://github.com/molikpunj/Tic-Tac-Toe" target="_blank" rel="noopener noreferrer">
+                    <button>View Project</button>
+                </a>
+            </div>
+            <div class="project-card">
+                <h3>Raise-A-Pet Game</h3>
+                <p>A virtual pet simulation game where users can take care of a digital pet. Features include feeding, playing, and monitoring pet health with engaging interactive elements.</p>
+                <button>View Project</button>
+            </div>
+            <div class="project-card">
+                <h3>Portfolio Website</h3>
+                <p>This very portfolio you're viewing! A responsive personal website showcasing my skills, projects, and journey. Built with modern web technologies and featuring smooth animations.</p>
+                <button>You're Here!</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="section achievements-section" id="achievements">
+        <h1>Achievements</h1>
+        <div class="achievement-item">
+            <h3>First Position - Intra-College Ideathon Competition</h3>
+            <p>Secured the first position in an intra-college ideathon competition, demonstrating innovative thinking and problem-solving skills. This achievement highlights my ability to conceptualize creative solutions and present them effectively.</p>
+        </div>
+    </div>
+
+    <div class="section journey-section" id="journey">
+        <h1>My Learning Journey</h1>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="year">2022 (Age 16)</div>
+                <h3>Programming Journey Begins</h3>
+                <p>Started my programming journey at the age of 16 with Python. Studied core libraries like NumPy, Pandas, and Matplotlib for school exams as part of Informatics Practices curriculum. Also learned SQL for database management.</p>
+            </div>
+            <div class="timeline-item">
+                <div class="year">2024 (Age 18)</div>
+                <h3>College Life & Advanced Learning</h3>
+                <p>Joined BCA course at Jagan Institute Of Management, Sector 5, Rohini, New Delhi. Expanded my knowledge in dynamic web development, Data Structures & Algorithms using C, Python programming, JavaScript, and Object-Oriented Programming concepts.</p>
+            </div>
+            <div class="timeline-item">
+                <div class="year">2025 (Age 19)</div>
+                <h3>Current Focus & Future Goals</h3>
+                <p>Mastered Git version control and started building small web development projects and AI projects. Currently working on expanding my portfolio with interactive applications.</p>
+                <p><strong>Upcoming Goals:</strong> Learning PyTorch and TensorFlow to develop my own AI models and dive deeper into machine learning implementations.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section div3 contact-section" id="contact">
+        <h1>Get In Touch</h1>
+        <p class="paragraph">Fill this form out if you want me to know who checked out my portfolio!</p>
+        <div id="success-message" style="display: none; color: rgb(144, 202, 249); font-size: 18px; font-weight: bold; margin-bottom: 20px;">
+            ✅ Form submitted successfully!
+        </div>
+        <form id="contact-form" action="https://formspree.io/f/xpwagnko" method="POST">
+            <input type="hidden" name="_to" value="moulickpunjdu@gmail.com">
+            <input type="hidden" name="_subject" value="New Portfolio Contact Form Submission">
+            <table>
+                <tr>
+                    <td>
+                        <label for="fname">First Name:</label><br>
+                        <input type="text" id="fname" name="first_name" required><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="lname">Last Name:</label><br>
+                        <input type="text" id="lname" name="last_name" required><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="age">Age:</label><br>
+                        <input type="number" id="age" name="age" min="1" max="120"><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Select Your Gender:</label><br>
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="male">Male</label><br>
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Female</label><br>
+                        <input type="radio" id="other" name="gender" value="other">
+                        <label for="other">Other</label><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Do You Have Any Of These Interests?:</label><br>
+                        <input type="checkbox" id="programming" name="interests" value="programming">
+                        <label for="programming">Programming</label><br>
+                        <input type="checkbox" id="kickboxing" name="interests" value="kickboxing">
+                        <label for="kickboxing">Kickboxing</label><br>
+                        <input type="checkbox" id="chess" name="interests" value="chess">
+                        <label for="chess">Chess</label><br>
+                        <input type="checkbox" id="games" name="interests" value="games">
+                        <label for="games">Video Games</label><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="favcolor">Select your favorite color:</label>
+                        <input type="color" id="favcolor" name="favorite_color"><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="date">What's The Date Today?:</label>
+                        <input type="date" id="date" name="date"><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" id="submit" name="submit" value="Submit" class="formb">
+                        <input type="reset" id="reset" name="reset" value="Reset" class="formb">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
